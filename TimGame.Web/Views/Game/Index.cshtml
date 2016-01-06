@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "TimGame";
+}
+
+<h2>Tim Game!</h2>
+
+Welcome
+
+@using (Html.BeginForm("StoryScene", "Game"))
+{
+    <h1> "What is your name?" </h1>
+    <input type="text" id="playerName" value="Bob" />
+
+    <input type="submit" value="Start!" />
+
+}

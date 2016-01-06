@@ -1,0 +1,17 @@
+﻿@model TimGame.Web.Models.Page
+
+@{
+    ViewBag.Title = "StoryScene";
+}
+
+<h2>StoryScene</h2>
+
+<div style="background-color: lightgreen; width:80%; height:300px;">
+    @Model.Title
+
+
+</div>
+@if (Model.NextPage != null)
+{
+    @Html.ActionLink("Next Page >", "StoryScene", new { pageNum = Model.NextPage.ID })
+}
