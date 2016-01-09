@@ -3,7 +3,7 @@ namespace TimGame.Web.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitialCreation : DbMigration
+    public partial class InitialCommit : DbMigration
     {
         public override void Up()
         {
@@ -12,6 +12,8 @@ namespace TimGame.Web.Migrations
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
+                        Title = c.String(),
+                        BackgroundUrl = c.String(),
                         NextPage_ID = c.Int(),
                     })
                 .PrimaryKey(t => t.ID)
@@ -22,13 +24,14 @@ namespace TimGame.Web.Migrations
                 "dbo.Characters",
                 c => new
                     {
-                        ID = c.Int(nullable: false),
+                        ID = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                         IsNPC = c.Boolean(nullable: false),
+                        NPCPageId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Pages", t => t.ID)
-                .Index(t => t.ID);
+                .ForeignKey("dbo.Pages", t => t.NPCPageId)
+                .Index(t => t.NPCPageId);
             
             CreateTable(
                 "dbo.Items",
@@ -50,29 +53,31 @@ namespace TimGame.Web.Migrations
                 "dbo.Stats",
                 c => new
                     {
-                        ID = c.Int(nullable: false),
+                        ID = c.Int(nullable: false, identity: true),
                         TotalHP = c.Int(nullable: false),
                         CurrentHP = c.Int(nullable: false),
                         Power = c.Int(nullable: false),
                         Quickness = c.Int(nullable: false),
                         Attack = c.Int(nullable: false),
                         AC = c.Int(nullable: false),
+                        CharacterId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Characters", t => t.ID)
-                .Index(t => t.ID);
+                .ForeignKey("dbo.Characters", t => t.CharacterId)
+                .Index(t => t.CharacterId);
             
             CreateTable(
                 "dbo.Texts",
                 c => new
                     {
-                        ID = c.Int(nullable: false),
+                        ID = c.Int(nullable: false, identity: true),
                         EnglishText = c.String(),
                         ChineseText = c.String(),
+                        NPCCharacterId = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.ID)
-                .ForeignKey("dbo.Characters", t => t.ID)
-                .Index(t => t.ID);
+                .ForeignKey("dbo.Characters", t => t.NPCCharacterId)
+                .Index(t => t.NPCCharacterId);
             
             CreateTable(
                 "dbo.AspNetRoles",
@@ -150,9 +155,9 @@ namespace TimGame.Web.Migrations
             DropForeignKey("dbo.AspNetUserLogins", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserClaims", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
-            DropForeignKey("dbo.Texts", "ID", "dbo.Characters");
-            DropForeignKey("dbo.Stats", "ID", "dbo.Characters");
-            DropForeignKey("dbo.Characters", "ID", "dbo.Pages");
+            DropForeignKey("dbo.Texts", "NPCCharacterId", "dbo.Characters");
+            DropForeignKey("dbo.Stats", "CharacterId", "dbo.Characters");
+            DropForeignKey("dbo.Characters", "NPCPageId", "dbo.Pages");
             DropForeignKey("dbo.Items", "Stats_ID", "dbo.Stats");
             DropForeignKey("dbo.Items", "Character_ID", "dbo.Characters");
             DropForeignKey("dbo.Pages", "NextPage_ID", "dbo.Pages");
@@ -162,11 +167,11 @@ namespace TimGame.Web.Migrations
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
-            DropIndex("dbo.Texts", new[] { "ID" });
-            DropIndex("dbo.Stats", new[] { "ID" });
+            DropIndex("dbo.Texts", new[] { "NPCCharacterId" });
+            DropIndex("dbo.Stats", new[] { "CharacterId" });
             DropIndex("dbo.Items", new[] { "Stats_ID" });
             DropIndex("dbo.Items", new[] { "Character_ID" });
-            DropIndex("dbo.Characters", new[] { "ID" });
+            DropIndex("dbo.Characters", new[] { "NPCPageId" });
             DropIndex("dbo.Pages", new[] { "NextPage_ID" });
             DropTable("dbo.AspNetUserLogins");
             DropTable("dbo.AspNetUserClaims");

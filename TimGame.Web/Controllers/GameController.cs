@@ -17,11 +17,16 @@ namespace TimGame.Web.Controllers
 
         public ActionResult StoryScene(int? pageNum)
         {
-            var db = new ApplicationDbContext();
+            var db = new TimGameDbContext();
+
 
             var model = db.Pages.Find(pageNum ?? 2);
 
+            //(current) pageNumb+1
+
             return View(model);
         }
+
+
     }
 }

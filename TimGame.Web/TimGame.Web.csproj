@@ -183,13 +183,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201601062056557_InitialCreation.cs" />
-    <Compile Include="Migrations\201601062056557_InitialCreation.Designer.cs">
-      <DependentUpon>201601062056557_InitialCreation.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201601062058145_PageProperties.cs" />
-    <Compile Include="Migrations\201601062058145_PageProperties.Designer.cs">
-      <DependentUpon>201601062058145_PageProperties.cs</DependentUpon>
+    <Compile Include="Migrations\201601082043500_InitialCommit.cs" />
+    <Compile Include="Migrations\201601082043500_InitialCommit.Designer.cs">
+      <DependentUpon>201601082043500_InitialCommit.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -273,11 +269,8 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201601062056557_InitialCreation.resx">
-      <DependentUpon>201601062056557_InitialCreation.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201601062058145_PageProperties.resx">
-      <DependentUpon>201601062058145_PageProperties.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201601082043500_InitialCommit.resx">
+      <DependentUpon>201601082043500_InitialCommit.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -4,15 +4,16 @@ namespace TimGame.Web.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
+    using Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TimTimGame.Web.Models.ApplicationDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<TimTimGame.Web.Models.TimGameDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(TimTimGame.Web.Models.ApplicationDbContext context)
+        protected override void Seed(TimTimGame.Web.Models.TimGameDbContext db)
         {
             //  This method will be called after migrating to the latest version.
 
@@ -26,6 +27,9 @@ namespace TimGame.Web.Migrations
             //      new Person { FullName = "Rowan Miller" }
             //    );
             //
+
+           // context.Characters.AddOrUpdate(x => x.ID,
+           //     new Character()
         }
     }
 }

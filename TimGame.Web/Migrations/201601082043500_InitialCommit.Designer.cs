@@ -7,13 +7,13 @@ namespace TimGame.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class InitialCreation : IMigrationMetadata
+    public sealed partial class InitialCommit : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreation));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCommit));
         
         string IMigrationMetadata.Id
         {
-            get { return "201601062056557_InitialCreation"; }
+            get { return "201601082043500_InitialCommit"; }
         }
         
         string IMigrationMetadata.Source
