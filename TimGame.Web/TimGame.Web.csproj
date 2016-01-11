@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201601082043500_InitialCommit.Designer.cs">
       <DependentUpon>201601082043500_InitialCommit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601111746195_updatePropNames.cs" />
+    <Compile Include="Migrations\201601111746195_updatePropNames.Designer.cs">
+      <DependentUpon>201601111746195_updatePropNames.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Battle\Battle.cs" />
@@ -197,6 +201,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Others\Choice.cs" />
     <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\SceneVM.cs" />
     <Compile Include="Models\Stat.cs" />
     <Compile Include="Models\Text.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -271,6 +276,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201601082043500_InitialCommit.resx">
       <DependentUpon>201601082043500_InitialCommit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601111746195_updatePropNames.resx">
+      <DependentUpon>201601111746195_updatePropNames.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

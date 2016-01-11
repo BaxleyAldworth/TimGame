@@ -6,13 +6,19 @@
 
 <h2>StoryScene</h2>
 
+<body background="@Model.BackgroundUrl">
+</body>
+
+<!--
 <div style="background-color: lightgreen; width:80%; height:300px;">
-    @Model.Title
+    // (at)Model.Title
 
 
 
 </div>
+-->
+
 @if (Model.NextPage != null)
 {
-    @Html.ActionLink("Next Page >", "StoryScene", new { pageNum = Model.NextPage.ID })
+    @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPage.Id })
 }

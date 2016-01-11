@@ -15,14 +15,11 @@ namespace TimGame.Web.Controllers
             return View();
         }
 
-        public ActionResult StoryScene(int? pageNum)
+        public ActionResult StoryScene(int? nextPageNum)
         {
             var db = new TimGameDbContext();
 
-
-            var model = db.Pages.Find(pageNum ?? 2);
-
-            //(current) pageNumb+1
+            var model = db.Pages.Find(nextPageNum ?? 2);
 
             return View(model);
         }

@@ -7,7 +7,7 @@ namespace TimGame.Web.Models
 {
     public class Text
     {
-        public int ID { get; set; }
+        public int Id { get; set; }
         public string EnglishText { get; set; }
         public string ChineseText { get; set; }
         public virtual Character NPC { get; set; }

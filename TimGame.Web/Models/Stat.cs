@@ -8,7 +8,7 @@ namespace TimGame.Web.Models
     public class Stat
     {
         public virtual Character Character { get; set; }
-        public int ID { get; set; }
+        public int Id { get; set; }
         public int TotalHP { get; set; }
         public int CurrentHP { get; set; }
         public int Power { get; set; }
