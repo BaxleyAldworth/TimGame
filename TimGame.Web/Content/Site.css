@@ -22,3 +22,53 @@ select,
 textarea {
     max-width: 280px;
 }
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.bubble {
+    position: relative;
+    width: 250px;
+    height: 120px;
+    padding: 0px;
+    background: #2460FF;
+    -webkit-border-radius: 33px;
+    -moz-border-radius: 33px;
+    border-radius: 33px;
+    border: #D4DCFF solid 6px;
+}
+
+    .bubble:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 19px 15px 0;
+        border-color: #2460FF transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        bottom: -19px;
+        left: 159px;
+    }
+
+    .bubble:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 24px 20px 0;
+        border-color: #D4DCFF transparent;
+        display: block;
+        width: 0;
+        z-index: 0;
+        bottom: -30px;
+        left: 154px;
+    }
+
+.tim {
+    background: url("/Public/Img/tim.png") no-repeat -223px -2px;
+    width: 16px;
+    height: 32px;
+}

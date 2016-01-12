@@ -4,47 +4,25 @@
     ViewBag.Title = "StoryScene";
 }
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
+
 
 <img src="http://orig08.deviantart.net/4357/f/2015/024/8/0/fantage_bg___school_hallway_by_whiterose0437-d8f6ynh.png" width="460" height="345">
 
-</body>
+    
 
-
-
-
-</html>
-
-
-
-<!--
-<body background="http://orig08.deviantart.net/4357/f/2015/024/8/0/fantage_bg___school_hallway_by_whiterose0437-d8f6ynh.png">
-margin: 0
-</body>
-    -->
-
-
-<!--
-<div style="background-color: lightgreen; width:80%; height:300px;">
-    // (at)Model.Title
-
-
-
+<div class="bubble">
+    <p>Hello world</p>
 </div>
--->
+
+<div class="tim">
+</div>
+
+
+
 
 @if (Model.NextPage != null)
 {
     @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPage.Id })
 }
+
+
