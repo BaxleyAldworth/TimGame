@@ -38,10 +38,6 @@ namespace TimTimGame.Web.Models
             modelBuilder.Entity<Character>().HasOptional(x => x.Stats).WithRequired(x => x.Character).Map(x=>x.MapKey("CharacterId"));
 
             modelBuilder.Entity<Character>().HasRequired(x => x.PageShownOn).WithOptional(x => x.NPConPage).Map(x => x.MapKey("NPCPageId"));
-
-            modelBuilder.Entity<Character>().HasOptional(x => x.Text).WithRequired(x => x.NPC).Map(x => x.MapKey("NPCCharacterId"));
-
-
            
         }
         public virtual DbSet<Page> Pages { get; set; }

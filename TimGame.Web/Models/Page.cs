@@ -8,7 +8,8 @@ namespace TimGame.Web.Models
     public class Page
     {
         public int Id { get; set; }
-        public virtual Page NextPage { get; set; }
+        public int? NextPageId { get; set; }
+      //  public virtual Page NextPage { get; set; }
         public virtual Character NPConPage { get; set; }
         public string Title { get; set; }
         public string BackgroundUrl { get; set; }
