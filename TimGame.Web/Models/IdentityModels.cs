@@ -45,5 +45,6 @@ namespace TimTimGame.Web.Models
            
         }
         public virtual DbSet<Page> Pages { get; set; }
+        public virtual DbSet<Text> Texts { get; set; }
     }
 }

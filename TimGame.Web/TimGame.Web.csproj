@@ -191,6 +191,10 @@
     <Compile Include="Migrations\201601111746195_updatePropNames.Designer.cs">
       <DependentUpon>201601111746195_updatePropNames.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601131725252_OrderText.cs" />
+    <Compile Include="Migrations\201601131725252_OrderText.Designer.cs">
+      <DependentUpon>201601131725252_OrderText.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Battle\Battle.cs" />
@@ -283,6 +287,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601111746195_updatePropNames.resx">
       <DependentUpon>201601111746195_updatePropNames.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601131725252_OrderText.resx">
+      <DependentUpon>201601131725252_OrderText.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
