@@ -13,7 +13,7 @@ namespace TimGame.Web.Models
         public virtual ICollection<Item> InventoryItems { get; set; }
         public virtual Stat Stats { get; set; }
         public bool IsNPC { get; set; }
-        public virtual ICollection<Text> Text { get; set; }
+        public virtual ICollection<Text> Phrases { get; set; }
         public virtual Page PageShownOn { get; set; }
         //Characters include the characters you control
         //and the enemies you'll be fighting

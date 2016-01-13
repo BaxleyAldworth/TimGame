@@ -1,18 +1,19 @@
-﻿@model TimGame.Web.Models.Page
+﻿@model TimGame.Web.Models.PageVM
 
 @{
     ViewBag.Title = "StoryScene";
 }
 
 
-
-<div class="hall">
-    <img src="/Public/Img/hall.png">
+<div class="scene-background">
+    <img src="/Public/Img/@Model.BackgroundUrl">
 </div>
 
 
 <div class="bubble">
-    <div class="bubblewords"></div>
+    <div class="bubblewords">
+
+    </div>
 </div>
 
 <div class="tim">
@@ -22,12 +23,26 @@
 </div>
 
 
+<button id="clickme">Move Forward</button>
+
+<div id="typed-strings-english" style="display: none;">
+    @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+    {
+        <p class="phrase">@p.CharacterName: ^500 @p.EnglishText</p>
+    }
+</div>
 
 
+<div id="typed-strings-chinese" style="display: none;">
+    @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+    {
+        <p class="phrase">@p.CharacterName: ^500 @p.ChineseText</p>
+    }
+</div>
 
-@if (Model.NextPage != null)
+@if (Model.NextPageId != null)
 {
-    @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPage.Id })
+    @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId })
 }
 
 
@@ -35,10 +50,20 @@
 @section scripts {
     <script>
         $(function () {
-            $(".bubblewords").typed({
-                strings: ["First sentence.", "Second sentence."],
-                typeSpeed: 0
+
+
+            var bubbleType = $(".bubblewords").typed({
+                stringsElement: $('#typed-strings-english'),
+                typeSpeed: 0,
+                onStringTyped: function () {
+                    bubbleType.stop();
+                },
+
             });
+
+            $('#clickme').click(function () { bubbleType.start(); });
+
         });
+
     </script>
 }

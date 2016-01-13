@@ -180,6 +180,11 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\GameController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Migrations\201601131829528_MultipleNPCOnPage.cs" />
+    <Compile Include="Migrations\201601131829528_MultipleNPCOnPage.Designer.cs">
+      <DependentUpon>201601131829528_MultipleNPCOnPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\PhraseVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -195,6 +200,10 @@
     <Compile Include="Migrations\201601131725252_OrderText.Designer.cs">
       <DependentUpon>201601131725252_OrderText.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601131751436_NextPageAndNPCText.cs" />
+    <Compile Include="Migrations\201601131751436_NextPageAndNPCText.Designer.cs">
+      <DependentUpon>201601131751436_NextPageAndNPCText.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Battle\Battle.cs" />
@@ -205,6 +214,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\Others\Choice.cs" />
     <Compile Include="Models\Page.cs" />
+    <Compile Include="Models\PageVM.cs" />
     <Compile Include="Models\SceneVM.cs" />
     <Compile Include="Models\Stat.cs" />
     <Compile Include="Models\Text.cs" />
@@ -290,6 +300,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601131725252_OrderText.resx">
       <DependentUpon>201601131725252_OrderText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601131751436_NextPageAndNPCText.resx">
+      <DependentUpon>201601131751436_NextPageAndNPCText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601131829528_MultipleNPCOnPage.resx">
+      <DependentUpon>201601131829528_MultipleNPCOnPage.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
