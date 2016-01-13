@@ -6,16 +6,21 @@
 
 
 
-<img src="http://orig08.deviantart.net/4357/f/2015/024/8/0/fantage_bg___school_hallway_by_whiterose0437-d8f6ynh.png" width="460" height="345">
+<div class="hall">
+    <img src="/Public/Img/hall.png">
+</div>
 
-    
 
 <div class="bubble">
-    <p>Hello world</p>
+    <div class="bubblewords"></div>
 </div>
 
 <div class="tim">
 </div>
+
+<div class="friend">
+</div>
+
 
 
 
@@ -26,3 +31,14 @@
 }
 
 
+
+@section scripts {
+    <script>
+        $(function () {
+            $(".bubblewords").typed({
+                strings: ["First sentence.", "Second sentence."],
+                typeSpeed: 0
+            });
+        });
+    </script>
+}

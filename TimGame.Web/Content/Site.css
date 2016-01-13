@@ -24,9 +24,12 @@ textarea {
 }
 
 
-img {
-    width: 100%;
-    height: auto;
+
+
+
+.hall, img {
+   width: 100%;
+   height: 100%;
 }
 
 .bubble {
@@ -67,8 +70,25 @@ img {
         left: 154px;
     }
 
+.bubblewords {
+    padding: 15px;
+    color: white;
+}
 .tim {
-    background: url("/Public/Img/tim.png") no-repeat -223px -2px;
     width: 16px;
     height: 32px;
+    background: url("/Public/Img/tim.png") no-repeat -223px -2px;
+    }
+
+.friend {
+    background: url('/Public/Img/friend.png') no-repeat -184px -2px;
+	width: 16px;
+	height: 32px;
+    -ms-background-size: 50px 100px;
+    background-size: 50px 100px;
+    display: inline-block;
+     overflow: hidden;
+
 }
+
+

@@ -26,4 +26,17 @@ namespace TimGame.Web.Controllers
 
 
     }
+
+
+    public class TextController : Controller
+    {
+        public ActionResult TextBubble()
+
+        var db = new TimGameDbContext();
+
+        var model = 
+    }
+
 }
+
+
