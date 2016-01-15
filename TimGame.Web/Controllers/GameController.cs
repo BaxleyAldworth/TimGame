@@ -28,20 +28,31 @@ namespace TimGame.Web.Controllers
             {
                 BackgroundUrl = page.BackgroundUrl,
                 NextPageId = page.NextPageId,
-                CharactersOnPage = page.CharactersOnPage, //TODO make characters on page a VM and pull only what is needed.
-                Phrases = from c in page.CharactersOnPage
-                                from p in c.Phrases
-                                select new PhraseVM
+                
+                CharactersOnPage = from c in page.CharactersOnPage
+                                   select new CharactersOnPageVM
+                                   {
+                                       Id = c.Id,
+                                       Name = c.Name,
+                                       PositionX = c.PositionX,
+                                       PositionY = c.PositionY
+                                   },
+
+
+                //CharactersOnPage = page.CharactersOnPage, //TODO make characters on page a VM and pull only what is needed.
+
+
+                Phrases = from p in p.Phrases
+                          select new PhraseVM
                                 {
                                     Id = p.Id,
                                     EnglishText = p.EnglishText,
                                     ChineseText = p.ChineseText,
                                     Order = p.Order,
-                                    CharacterId = c.Id,
-                                    CharacterName = c.Name
+                                    CharacterId = p.Id,
+                                    CharacterName = p.Name
                                 }
             };
-
 
             return View(model);
         }

@@ -5,18 +5,18 @@
     ViewBag.Title = "StoryScene";
 }
 
-
 <div class="row">
     <img src="/Public/Img/@Model.BackgroundUrl">
-    @foreach (var m in Model.CharactersOnPage)
+@*foreach (var m in Model.CharactersOnPage)
     {
-        if (m.PageShownOn == Page.Id)
+
         {
             <div class="@m.Name" style="top: @m.PositionX; left: @m.PositionY;">
             </div>
         }
 
     }
+*@
 
     <div class="tim"></div>
 
