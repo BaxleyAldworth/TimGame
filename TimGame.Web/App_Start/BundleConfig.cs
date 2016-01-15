@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace TimTimGame.Web
+namespace TimGame.Web
 {
     public class BundleConfig
     {

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace TimTimGame.Web
+namespace TimGame.Web
 {
     public class RouteConfig
     {

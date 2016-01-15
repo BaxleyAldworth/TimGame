@@ -1,9 +1,7 @@
-﻿$primary-color: #333;
-
+﻿
 body {
-    color: $primary-color;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    /*padding-top: 50px;*/
+    /*padding-bottom: 20px;*/
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -31,53 +29,50 @@ textarea {
 
 
 .scene-background, img {
-   width: 100%;
-   height: 100%;
-   position: relative;
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
 
-.bubble 
-{
-position: relative;
-width: 250px;
-height: 110px;
-padding: 0px;
-background: #0081FF;
--webkit-border-radius: 59px;
--moz-border-radius: 59px;
-border-radius: 59px;
-border: #FFFFFF solid 4px;
-bottom: 135px;
-right: 20px;
+.bubble {
+    position: relative;
+    width: 250px;
+    height: 110px;
+    padding: 0px;
+    background: #0081FF;
+    -webkit-border-radius: 59px;
+    -moz-border-radius: 59px;
+    border-radius: 59px;
+    border: #FFFFFF solid 4px;
+    bottom: 135px;
+    right: 20px;
 }
 
-.bubble:after 
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 25px 11px 0;
-border-color: #0081FF transparent;
-display: block;
-width: 0;
-z-index: 1;
-bottom: -25px;
-left: 61px;
+.bubble:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 25px 11px 0;
+    border-color: #0081FF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    bottom: -25px;
+    left: 61px;
 }
 
-.bubble:before 
-{
-content: '';
-position: absolute;
-border-style: solid;
-border-width: 28px 14px 0;
-border-color: #FFFFFF transparent;
-display: block;
-width: 0;
-z-index: 0;
-bottom: -32px;
-left: 58px;
+.bubble:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 28px 14px 0;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    bottom: -32px;
+    left: 58px;
 }
 
 .bubblewords {
@@ -93,7 +88,6 @@ $sprite-scale: 3.5;
     height: calc(36px * #{$sprite-scale});
     background: url("/Public/Img/tim.png") no-repeat calc(-222px * #{$sprite-scale}) 0;
     background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
-
     position: absolute;
     top: 183px;
     left: 480px;
@@ -107,8 +101,13 @@ $sprite-scale: 3.5;
     position: absolute;
     top: 170px;
     left: 550px;
-  
+}
 
-  
 
+html {
+    background: url("/Public/Img/chalkboard.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

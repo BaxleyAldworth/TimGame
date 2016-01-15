@@ -10,9 +10,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using TimTimGame.Web.Models;
+using TimGame.Web.Models;
 
-namespace TimTimGame.Web
+namespace TimGame.Web
 {
     public class EmailService : IIdentityMessageService
     {

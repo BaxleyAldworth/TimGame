@@ -184,6 +184,7 @@
     <Compile Include="Migrations\201601131829528_MultipleNPCOnPage.Designer.cs">
       <DependentUpon>201601131829528_MultipleNPCOnPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CharacterVM.cs" />
     <Compile Include="Models\PhraseVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -238,6 +239,8 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="Content\Site.scss" />
+    <Content Include="Public\Img\chalkboard.jpg" />
+    <Content Include="Public\Img\chalkboardFull.jpg" />
     <Content Include="Public\Img\Friend.png" />
     <Content Include="Public\Img\hall.png" />
     <Content Include="Scripts\bootstrap.js" />
@@ -253,6 +256,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\RyanTyper.js" />
     <Content Include="Scripts\typed.min.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Public\Img\tim.png" />

@@ -1,30 +1,41 @@
-﻿@model TimGame.Web.Models.PageVM
+﻿@using TimGame.Web.Models
+@model TimGame.Web.Models.PageVM
 
 @{
     ViewBag.Title = "StoryScene";
 }
-
-
 <div class="scene-background">
     <img src="/Public/Img/@Model.BackgroundUrl">
+    @foreach (var m in Model.CharactersOnPage)
+    {
+        @*<div class="@m.Name" style="top: @m.PositionX}">
+        </div>*@
+    }
 
-    <div class="tim">
-    </div>
+    <div class="tim"></div>
 
     <div class="friend">
-    <div class="bubble">
-        <div class="bubblewords">
+        <div class="bubble">
+            <div class="bubblewords">
 
+            </div>
         </div>
-    </div>
     </div>
 </div>
 
+<button class="btn btn-danger" id="clickme">Continue...</button>
 
 
 
 
-<button id="clickme">Move Forward</button>
+
+
+
+
+
+
+
+
 
 <div id="typed-strings-english" style="display: none;">
     @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
@@ -43,9 +54,8 @@
 
 @if (Model.NextPageId != null)
 {
-    @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId })
+    @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class="btn btn-primary"})
 }
-
 
 
 @section scripts {
@@ -53,7 +63,7 @@
         $(function () {
 
             var bubbleType = $(".bubblewords").typed({
-                stringsElement: $('#typed-strings-english'),
+                stringsElement: $('#typed-strings-chinese'),
                 typeSpeed: 0,
                 onStringTyped: function () {
                     bubbleType.stop();

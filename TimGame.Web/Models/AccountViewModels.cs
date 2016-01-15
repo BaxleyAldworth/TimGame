@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace TimTimGame.Web.Models
+namespace TimGame.Web.Models
 {
     public class ExternalLoginConfirmationViewModel
     {

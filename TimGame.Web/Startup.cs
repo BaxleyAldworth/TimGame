@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(TimTimGame.Web.Startup))]
-namespace TimTimGame.Web
+[assembly: OwinStartupAttribute(typeof(TimGame.Web.Startup))]
+namespace TimGame.Web
 {
     public partial class Startup
     {

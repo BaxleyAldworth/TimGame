@@ -5,9 +5,9 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
-using TimTimGame.Web.Models;
+using TimGame.Web.Models;
 
-namespace TimTimGame.Web
+namespace TimGame.Web
 {
     public partial class Startup
     {

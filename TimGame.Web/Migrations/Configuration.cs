@@ -6,14 +6,14 @@ namespace TimGame.Web.Migrations
     using System.Linq;
     using Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<TimTimGame.Web.Models.TimGameDbContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<TimGame.Web.Models.TimGameDbContext>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
         }
 
-        protected override void Seed(TimTimGame.Web.Models.TimGameDbContext db)
+        protected override void Seed(TimGame.Web.Models.TimGameDbContext db)
         {
             //  This method will be called after migrating to the latest version.
 

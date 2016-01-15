@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using TimGame.Web.Models;
-using TimTimGame.Web.Models;
+using TimGame.Web.Models;
 
 namespace TimGame.Web.Controllers
 {
@@ -29,6 +29,7 @@ namespace TimGame.Web.Controllers
             {
                 BackgroundUrl = page.BackgroundUrl,
                 NextPageId = page.NextPageId,
+                CharactersOnPage = page.CharactersOnPage, //TODO make characters on page a VM and pull only what is needed.
                 Phrases = from c in page.CharactersOnPage
                                 from p in c.Phrases
                                 select new PhraseVM
