@@ -1,5 +1,5 @@
-﻿var paragraphs = $('p');
-var button = $('button');
+﻿var paragraphs = $('p.phrase');
+var button = $('#continueText');
 var activeIndex = 0;
 
 function getCharacterCount(el) {
@@ -13,7 +13,6 @@ function setNextActive() {
   
   var animated = paragraphs.eq(activeIndex);
   var  characters = getCharacterCount(animated);
-  console.log(characters);
   
   animated.toggleClass('active')
     .animate({

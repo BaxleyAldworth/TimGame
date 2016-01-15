@@ -184,7 +184,6 @@
     <Compile Include="Migrations\201601131829528_MultipleNPCOnPage.Designer.cs">
       <DependentUpon>201601131829528_MultipleNPCOnPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\CharacterVM.cs" />
     <Compile Include="Models\PhraseVM.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -1,7 +1,6 @@
 ﻿using System.Linq;
 using System.Web.Mvc;
 using TimGame.Web.Models;
-using TimGame.Web.Models;
 
 namespace TimGame.Web.Controllers
 {

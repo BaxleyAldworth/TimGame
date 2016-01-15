@@ -4,12 +4,18 @@
 @{
     ViewBag.Title = "StoryScene";
 }
-<div class="scene-background">
+
+
+<div class="row">
     <img src="/Public/Img/@Model.BackgroundUrl">
     @foreach (var m in Model.CharactersOnPage)
     {
-        @*<div class="@m.Name" style="top: @m.PositionX}">
-        </div>*@
+        if (m.PageShownOn == Page.Id)
+        {
+            <div class="@m.Name" style="top: @m.PositionX; left: @m.PositionY;">
+            </div>
+        }
+
     }
 
     <div class="tim"></div>
@@ -17,63 +23,48 @@
     <div class="friend">
         <div class="bubble">
             <div class="bubblewords">
-
+                @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+                {
+                    <p class="phrase">@p.CharacterName: @p.EnglishText</p>
+                }
             </div>
+            <button class="btn btn-danger" id="continueText">Continue...</button>
         </div>
     </div>
 </div>
 
-<button class="btn btn-danger" id="clickme">Continue...</button>
+<div class="row">
 
 
 
 
-
-
-
-
-
-
-
-
-
-<div id="typed-strings-english" style="display: none;">
-    @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+    @if (Model.NextPageId != null)
     {
-        <p class="phrase">@p.CharacterName: ^500 @p.EnglishText</p>
+        <div class="col-md-1 col-md-offset-10">
+
+            @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class = "btn btn-primary float-right" })
+        </div>
     }
+
 </div>
 
 
-<div id="typed-strings-chinese" style="display: none;">
-    @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
-    {
-        <p class="phrase">@p.CharacterName: ^500 @p.ChineseText</p>
-    }
-</div>
+@*<div id="typed-strings-english" style="display: none;">
+        @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+        {
+            <p class="phrase">@p.CharacterName: ^500 @p.EnglishText</p>
+        }
+    </div>
 
-@if (Model.NextPageId != null)
-{
-    @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class="btn btn-primary"})
-}
+
+    <div id="typed-strings-chinese" style="display: none;">
+        @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+        {
+            <p class="phrase">@p.CharacterName: ^500 @p.ChineseText</p>
+        }
+    </div>*@
 
 
 @section scripts {
-    <script>
-        $(function () {
 
-            var bubbleType = $(".bubblewords").typed({
-                stringsElement: $('#typed-strings-chinese'),
-                typeSpeed: 0,
-                onStringTyped: function () {
-                    bubbleType.stop();
-                },
-
-            });
-
-            $('#clickme').click(function () { bubbleType.start(); });
-
-        });
-
-    </script>
 }

@@ -15,6 +15,9 @@ namespace TimGame.Web.Models
         public bool IsNPC { get; set; }
         public virtual ICollection<Text> Phrases { get; set; }
         public virtual Page PageShownOn { get; set; }
+        public int PositionX { get; set; }
+        public int PositionY { get; set; }
+
         //Characters include the characters you control
         //and the enemies you'll be fighting
 
