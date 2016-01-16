@@ -5,7 +5,7 @@ namespace TimGame.Web.Models
     public class PageVM
     {
         public int? NextPageId { get; set; }  
-        public ICollection<Character> CharactersOnPage { get; set; } = new List<Character>();
+        public IEnumerable<CharactersOnPageVM> CharactersOnPage { get; set; } = new List<CharactersOnPageVM>();
         public string BackgroundUrl { get; set; }
         public IEnumerable<PhraseVM> Phrases { get; set; } = new List<PhraseVM>();
         //public int CurrentPageId { get; set; }

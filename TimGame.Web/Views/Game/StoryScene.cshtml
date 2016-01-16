@@ -7,18 +7,18 @@
 
 <div class="row">
     <img src="/Public/Img/@Model.BackgroundUrl">
-@*foreach (var m in Model.CharactersOnPage)
+    @foreach (var m in Model.CharactersOnPage)
     {
+        string positionStyle = $"top: {m.PositionY}px; left: {m.PositionX}px";
+    
 
-        {
-            <div class="@m.Name" style="top: @m.PositionX; left: @m.PositionY;">
-            </div>
-        }
+        <div class="tim" style="@positionStyle">
+        </div>
 
     }
-*@
 
-    <div class="tim"></div>
+
+    @*<div class="tim"></div>*@
 
     <div class="friend">
         <div class="bubble">

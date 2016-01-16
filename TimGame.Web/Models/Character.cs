@@ -14,7 +14,7 @@ namespace TimGame.Web.Models
         public virtual Stat Stats { get; set; }
         public bool IsNPC { get; set; }
         public virtual ICollection<Text> Phrases { get; set; }
-        public virtual int PageShownOn { get; set; }
+        public virtual Page PageShownOn { get; set; }
         public int PositionX { get; set; }
         public int PositionY { get; set; }
 

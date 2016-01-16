@@ -21,7 +21,6 @@ namespace TimGame.Web.Controllers
                 nextPageNum = db.Pages.Min(x => x.Id);
             }
 
-
             var page = db.Pages.Find(nextPageNum);
 
             var model = new PageVM
@@ -38,19 +37,18 @@ namespace TimGame.Web.Controllers
                                        PositionY = c.PositionY
                                    },
 
-
-                //CharactersOnPage = page.CharactersOnPage, //TODO make characters on page a VM and pull only what is needed.
-
-
-                Phrases = from p in p.Phrases
+                
+                Phrases = 
+                          from c in page.CharactersOnPage
+                          from p in c.Phrases
                           select new PhraseVM
                                 {
                                     Id = p.Id,
                                     EnglishText = p.EnglishText,
                                     ChineseText = p.ChineseText,
                                     Order = p.Order,
-                                    CharacterId = p.Id,
-                                    CharacterName = p.Name
+                                    CharacterId = c.Id,
+                                    CharacterName = c.Name
                                 }
             };
 

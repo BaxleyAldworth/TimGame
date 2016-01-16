@@ -184,9 +184,9 @@
     <Compile Include="Migrations\201601131829528_MultipleNPCOnPage.Designer.cs">
       <DependentUpon>201601131829528_MultipleNPCOnPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201601152223340_removingPositionXY.cs" />
-    <Compile Include="Migrations\201601152223340_removingPositionXY.Designer.cs">
-      <DependentUpon>201601152223340_removingPositionXY.cs</DependentUpon>
+    <Compile Include="Migrations\201601160023051_AddPositionXY.cs" />
+    <Compile Include="Migrations\201601160023051_AddPositionXY.Designer.cs">
+      <DependentUpon>201601160023051_AddPositionXY.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\CharactersOnPageVM.cs" />
     <Compile Include="Models\PhraseVM.cs" />
@@ -325,8 +325,8 @@
     <EmbeddedResource Include="Migrations\201601131829528_MultipleNPCOnPage.resx">
       <DependentUpon>201601131829528_MultipleNPCOnPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201601152223340_removingPositionXY.resx">
-      <DependentUpon>201601152223340_removingPositionXY.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201601160023051_AddPositionXY.resx">
+      <DependentUpon>201601160023051_AddPositionXY.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

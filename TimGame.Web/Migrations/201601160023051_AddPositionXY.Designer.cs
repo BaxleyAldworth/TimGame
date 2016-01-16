@@ -7,13 +7,13 @@ namespace TimGame.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class removingPositionXY : IMigrationMetadata
+    public sealed partial class AddPositionXY : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(removingPositionXY));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(AddPositionXY));
         
         string IMigrationMetadata.Id
         {
-            get { return "201601152223340_removingPositionXY"; }
+            get { return "201601160023051_AddPositionXY"; }
         }
         
         string IMigrationMetadata.Source
