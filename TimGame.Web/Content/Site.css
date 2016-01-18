@@ -65,7 +65,7 @@ textarea {
   padding: 15px;
   color: white; }
 
-.tim {
+.Tim {
   width: calc(18px * 3.5);
   height: calc(36px * 3.5);
   background: url("/Public/Img/tim.png") no-repeat calc(-222px * 3.5) 0;
@@ -74,7 +74,7 @@ textarea {
   top: 183px;
   left: 480px; }
 
-.friend {
+.Friend {
   width: calc(25px * 3.5);
   height: calc(38px * 3.5);
   background: url("/Public/Img/friend.png") no-repeat calc(-184px* 3.5) 0;

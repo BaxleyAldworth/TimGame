@@ -83,7 +83,7 @@ textarea {
 
 $sprite-scale: 3.5;
 
-.tim {
+.Tim {
     width: calc(18px * #{$sprite-scale});
     height: calc(36px * #{$sprite-scale});
     background: url("/Public/Img/tim.png") no-repeat calc(-222px * #{$sprite-scale}) 0;
@@ -93,7 +93,7 @@ $sprite-scale: 3.5;
     left: 480px;
 }
 
-.friend {
+.Friend {
     width: calc(25px * #{$sprite-scale});
     height: calc(38px * #{$sprite-scale});
     background: url('/Public/Img/friend.png') no-repeat calc(-184px* #{$sprite-scale})0;

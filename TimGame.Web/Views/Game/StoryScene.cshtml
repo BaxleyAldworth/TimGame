@@ -10,15 +10,11 @@
     @foreach (var m in Model.CharactersOnPage)
     {
         string positionStyle = $"top: {m.PositionY}px; left: {m.PositionX}px";
-    
 
-        <div class="tim" style="@positionStyle">
-        </div>
+        <div class="@m.Name" style="@positionStyle"></div>
 
     }
 
-
-    @*<div class="tim"></div>*@
 
     <div class="friend">
         <div class="bubble">
@@ -31,6 +27,7 @@
             <button class="btn btn-danger" id="continueText">Continue...</button>
         </div>
     </div>
+    
 </div>
 
 <div class="row">
