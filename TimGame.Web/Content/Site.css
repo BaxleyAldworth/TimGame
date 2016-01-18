@@ -70,18 +70,23 @@ textarea {
   height: calc(36px * 3.5);
   background: url("/Public/Img/tim.png") no-repeat calc(-222px * 3.5) 0;
   background-size: calc(431px * 3.5) calc(1204px * 3.5);
-  position: absolute;
-  top: 183px;
-  left: 480px; }
+  position: absolute; }
 
 .Friend {
   width: calc(25px * 3.5);
   height: calc(38px * 3.5);
   background: url("/Public/Img/friend.png") no-repeat calc(-184px* 3.5) 0;
   background-size: calc(431px * 3.5) calc(1204px * 3.5);
+  position: absolute; }
+
+.TimLocker {
+  width: calc(18px * 3.5);
+  height: calc(36px * 3.5);
+  background: url("/Public/Img/tim.png") no-repeat calc(-326px * 3.5) -123px * 3.5;
+  background-size: calc(431px * 3.5) calc(1204px * 3.5);
   position: absolute;
-  top: 170px;
-  left: 550px; }
+  top: 183px;
+  left: 480px; }
 
 html {
   background: url("/Public/Img/chalkboard.jpg") no-repeat center center fixed;

@@ -16,18 +16,18 @@
     }
 
 
-    <div class="friend">
+    <div class="Friend">
         <div class="bubble">
             <div class="bubblewords">
-                @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
-                {
-                    <p class="phrase">@p.CharacterName: @p.EnglishText</p>
-                }
+                <span class="phrase"></span>
             </div>
-            <button class="btn btn-danger" id="continueText">Continue...</button>
+            <button class="btn btn-danger btn-sm" id="continueText">Continue...</button>
+            <button class="btn btn-danger btn-sm" id="translateText">Translate</button>
         </div>
     </div>
-    
+
+
+    <div class="TimLocker"></div>
 </div>
 
 <div class="row">
@@ -46,22 +46,49 @@
 </div>
 
 
-@*<div id="typed-strings-english" style="display: none;">
-        @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
-        {
-            <p class="phrase">@p.CharacterName: ^500 @p.EnglishText</p>
-        }
-    </div>
+<div id="typed-strings-english">
+    @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+    {
+        <p >@p.CharacterName: @p.EnglishText</p>
+    }
+</div>
 
 
-    <div id="typed-strings-chinese" style="display: none;">
-        @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
-        {
-            <p class="phrase">@p.CharacterName: ^500 @p.ChineseText</p>
-        }
-    </div>*@
+<div id="typed-strings-chinese" >
+    @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
+    {
+        <p >@p.CharacterName: @p.ChineseText</p>
+    }
+</div>
 
 
 @section scripts {
+    <script>
+        $(function () {
 
+            $(".phrase").typed({
+                stringsElement: $('#typed-strings-english'),
+                stringsElementTranslate: $('#typed-strings-chinese'),
+                typeSpeed: 0,
+                backSpeed: 10,
+                backDelay: 1,
+                callback: function () {
+                    nextButton.show();
+                },
+                nextButton: $('#continueText'),
+
+
+            });
+
+
+            $('#translateText').click(function () {
+                console.log('click');
+                $(".phrase").typed('translate');
+
+            });
+
+
+        });
+
+    </script>
 }

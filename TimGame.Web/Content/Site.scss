@@ -89,8 +89,8 @@ $sprite-scale: 3.5;
     background: url("/Public/Img/tim.png") no-repeat calc(-222px * #{$sprite-scale}) 0;
     background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
     position: absolute;
-    top: 183px;
-    left: 480px;
+    //top: 183px;
+    //left: 480px;
 }
 
 .Friend {
@@ -99,10 +99,20 @@ $sprite-scale: 3.5;
     background: url('/Public/Img/friend.png') no-repeat calc(-184px* #{$sprite-scale})0;
     background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
     position: absolute;
-    top: 170px;
-    left: 550px;
+    //top: 170px;
+    //left: 550px;
 }
 
+
+.TimLocker {
+    width: calc(18px * #{$sprite-scale});
+    height: calc(36px * #{$sprite-scale});
+    background: url("/Public/Img/tim.png") no-repeat calc(-326px * #{$sprite-scale}) (-123px * #{$sprite-scale});
+    background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
+    position: absolute;
+    top: 183px;
+    left: 480px;
+}
 
 html {
     background: url("/Public/Img/chalkboard.jpg") no-repeat center center fixed;
