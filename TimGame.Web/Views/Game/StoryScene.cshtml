@@ -11,23 +11,21 @@
     {
         string positionStyle = $"top: {m.PositionY}px; left: {m.PositionX}px";
 
-        <div class="@m.Name" style="@positionStyle"></div>
-
-    }
-
-
-    <div class="Friend">
-        <div class="bubble">
-            <div class="bubblewords">
-                <span class="phrase"></span>
-            </div>
-            <button class="btn btn-danger btn-sm" id="continueText">Continue...</button>
-            <button class="btn btn-danger btn-sm" id="translateText">Translate</button>
+        <div class="@m.Name" style="@positionStyle">
+            @if (m.Name == "Friend" || m.Name == "LockerTron9000" || m.Name == "Bully")
+            {
+                <div class="bubble">
+                    <div class="bubblewords">
+                        <span class="phrase"></span>
+                        <div>
+                            <button class="btn" id="continueText">More</button>
+                            <button class="btn" id="translateText">Translate</button>
+                        </div>
+                    </div>
+                </div>
+            }
         </div>
-    </div>
-
-
-    <div class="TimLocker"></div>
+    }
 </div>
 
 <div class="row">
@@ -36,10 +34,10 @@
 
 
     @if (Model.NextPageId != null)
-    {
+            {
         <div class="col-md-1 col-md-offset-10">
 
-            @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class = "btn btn-primary float-right" })
+            @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class = "btnNext float-right" })
         </div>
     }
 
@@ -48,16 +46,16 @@
 
 <div id="typed-strings-english">
     @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
-    {
-        <p >@p.CharacterName: @p.EnglishText</p>
+            {
+        <p>@p.CharacterName: @p.EnglishText</p>
     }
 </div>
 
 
-<div id="typed-strings-chinese" >
+<div id="typed-strings-chinese">
     @foreach (var p in Model.Phrases.OrderBy(x => x.Order))
-    {
-        <p >@p.CharacterName: @p.ChineseText</p>
+            {
+        <p>@p.CharacterName: @p.ChineseText</p>
     }
 </div>
 
