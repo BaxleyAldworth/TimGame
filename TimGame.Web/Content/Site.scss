@@ -194,7 +194,7 @@ $sprite-scaleBully: 3.5;
 .TimLocker {
     width: calc(23px * #{$sprite-scaleTimFriend});
     height: calc(32px * #{$sprite-scaleTimFriend});
-    background: url("/Public/Img/tim.png") no-repeat calc(-324px * #{$sprite-scaleTimFriend}) (-42px * #{$sprite-scaleTimFriend});
+    background: url("/Public/Img/tim.png") no-repeat calc(-324px * #{$sprite-scaleTimFriend}) calc(-42px * #{$sprite-scaleTimFriend});
     background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
     //top: 183px;
@@ -208,72 +208,72 @@ $sprite-scaleBully: 3.5;
 .TimBully {
     width: calc(18px * 2.7);
     height: calc(36px * 2.7);
-    background: url("/Public/Img/tim.png") no-repeat calc(-222px * $sprite-scaleTimFriend) 0;
-    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    background: url("/Public/Img/tim.png") no-repeat calc(-222px * #{$sprite-scaleTimFriend}) 0;
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
 }
 
 .Bully {
     width: calc(25px * 2.9);
     height: calc(39px * 2.9);
-    background: url('/Public/Img/bully.png') no-repeat calc(-184px * $sprite-scaleBully) 0;
-    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    background: url('/Public/Img/bully.png') no-repeat calc(-184px * #{$sprite-scaleBully}) 0;
+    background-size: calc(431px * #{$sprite-scaleBully}) calc(1204px * #{$sprite-scaleBully});
     position: absolute;
 }
 
 .TimPunch1 {
     width: calc(22px * 2.7);
     height: calc(36px * 2.7);
-    background: url("/Public/Img/tim.png") no-repeat calc(-220px * $sprite-scaleTimFriend) calc(-122px * $sprite-scaleTimFriend);
-    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    background: url("/Public/Img/tim.png") no-repeat calc(-220px * #{$sprite-scaleTimFriend}) calc(-122px * #{$sprite-scaleTimFriend});
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
 }
 
 .TimPunch2 {
     width: calc(26px * 2.7);
     height: calc(36px * 2.7);
-    background: url("/Public/Img/tim.png") no-repeat calc(-398px * $sprite-scaleTimFriend) calc(-122px * $sprite-scaleTimFriend);
-    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    background: url("/Public/Img/tim.png") no-repeat calc(-398px * #{$sprite-scaleTimFriend}) calc(-122px * #{$sprite-scaleTimFriend});
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
 }
 
 .TimVictorious {
     width: calc(22px * 2.7);
     height: calc(36px * 2.7);
-    background: url("/Public/Img/tim.png") no-repeat calc(-254px * $sprite-scaleTimFriend) calc(-42px * $sprite-scaleTimFriend);
-    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    background: url("/Public/Img/tim.png") no-repeat calc(-254px * #{$sprite-scaleTimFriend}) calc(-42px * #{$sprite-scaleTimFriend});
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
 }
 
 .BullyPunch1 {
     width: calc(27px * 2.9);
     height: calc(39px * 2.9);
-    background: url('/Public/Img/bully.png') no-repeat calc(-214px * $sprite-scaleBully) 0;
-    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    background: url('/Public/Img/bully.png') no-repeat calc(-214px * #{$sprite-scaleBully}) 0;
+    background-size: calc(431px * #{$sprite-scaleBully}) calc(1204px * #{$sprite-scaleBully});
     position: absolute;
 }
 
 .BullyPunch2 {
     width: calc(32px * 2.9);
     height: calc(42px * 2.9);
-    background: url('/Public/Img/bully.png') no-repeat calc(-74px * $sprite-scaleBully) calc(-133px * $sprite-scaleBully);
-    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    background: url('/Public/Img/bully.png') no-repeat calc(-74px * #{$sprite-scaleBully}) calc(-133px * #{$sprite-scaleBully});
+    background-size: calc(431px * #{$sprite-scaleBully}) calc(1204px * #{$sprite-scaleBully});
     position: absolute;
 }
 
 .BullyVanquished {
     width: calc(39px * 2.9);
     height: calc(37px * 2.9);
-    background: url('/Public/Img/bully.png') no-repeat calc(-106px * $sprite-scaleBully) calc(-172px * $sprite-scaleBully);
-    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    background: url('/Public/Img/bully.png') no-repeat calc(-106px * #{$sprite-scaleBully}) calc(-172px * #{$sprite-scaleBully});
+    background-size: calc(431px * #{$sprite-scaleBully}) calc(1204px * #{$sprite-scaleBully});
     position: absolute;
 }
 
 .TimWalk {
     width: calc(22px * 2.7);
     height: calc(36px * 2.7);
-    background: url("/Public/Img/tim.png") no-repeat calc(-325px * $sprite-scaleTimFriend) 0;
-    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    background: url("/Public/Img/tim.png") no-repeat calc(-325px * #{$sprite-scaleTimFriend}) 0;
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
 }
 
