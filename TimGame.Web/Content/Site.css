@@ -72,6 +72,48 @@ textarea {
   text-decoration: none;
 }
 
+.bubbleSide 
+{
+position: relative;
+width: 240px;
+/*height: 120px;*/
+padding: 0px;
+background: #0081FF;
+-webkit-border-radius: 29px;
+-moz-border-radius: 29px;
+border-radius: 29px;
+border: #FFFFFF solid 3px;
+}
+
+.bubbleSide:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 5px 10px 5px 0;
+border-color: transparent #0081FF;
+display: block;
+width: 0;
+z-index: 1;
+left: -10px;
+top: 31px;
+}
+
+.bubbleSide:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 7px 12px 7px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 0;
+left: -15px;
+top: 29px;
+}
+
+
 .bubble {
   position: relative;
   width: 250px;

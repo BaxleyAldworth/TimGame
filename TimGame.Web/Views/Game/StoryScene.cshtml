@@ -1,4 +1,5 @@
-﻿@using TimGame.Web.Models
+﻿@using Microsoft.Ajax.Utilities
+@using TimGame.Web.Models
 @model TimGame.Web.Models.PageVM
 
 @{
@@ -12,9 +13,10 @@
         string positionStyle = $"top: {m.PositionY}px; left: {m.PositionX}px";
 
         <div class="@m.Name" style="@positionStyle">
-            @if (m.IsNPC == true)
+            
+            @if (m.Name == "LockerTron9000" || m.Name == "Teacher")
             {
-                <div class="bubble">
+                <div class="bubbleSide">
                     <div class="bubblewords">
                         <span class="phrase"></span>
                         <div>
@@ -23,7 +25,22 @@
                         </div>
                     </div>
                 </div>
+                break;
             }
+
+            @if (m.IsNPC == true)
+            {
+            <div class="bubble">
+                <div class="bubblewords">
+                    <span class="phrase"></span>
+                    <div>
+                        <button class="btn" id="continueText">More</button>
+                        <button class="btn" id="translateText">Translate</button>
+                    </div>
+                </div>
+            </div>
+            }
+
         </div>
     }
 </div>
