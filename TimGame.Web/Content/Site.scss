@@ -2,6 +2,8 @@
 body {
     /*padding-top: 50px;*/
     /*padding-bottom: 20px;*/
+    background-color: #f5f5f5;
+    background-color: rgba(245, 245, 245, 0);
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -24,15 +26,59 @@ textarea {
     max-width: 280px;
 }
 
-
-
-
-
 .scene-background, img {
     width: 100%;
     height: 100%;
     position: relative;
 }
+
+.btn {
+    background: #0081FF;
+    background-image: -webkit-linear-gradient(top, #0081FF, #0081FF);
+    background-image: -moz-linear-gradient(top, #0081FF, #0081FF);
+    background-image: -ms-linear-gradient(top, #0081FF, #0081FF);
+    background-image: -o-linear-gradient(top, #0081FF, #0081FF);
+    background-image: linear-gradient(to bottom, #0081FF, #0081FF);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 8px;
+    padding: 2px 4px 2px 4px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    left: 50px;
+}
+
+    .btn:hover {
+        background: #3cb0fd;
+        text-decoration: none;
+    }
+
+.btnNext {
+    background: #aab844;
+    background-image: -webkit-linear-gradient(top, #aab844, #191b1c);
+    background-image: -moz-linear-gradient(top, #aab844, #191b1c);
+    background-image: -ms-linear-gradient(top, #aab844, #191b1c);
+    background-image: -o-linear-gradient(top, #aab844, #191b1c);
+    background-image: linear-gradient(to bottom, #aab844, #191b1c);
+    -webkit-border-radius: 25;
+    -moz-border-radius: 25;
+    border-radius: 25px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 2px 4px 2px 4px;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+}
+
+    .btnNext:hover {
+        background: #bfc431;
+        text-decoration: none;
+    }
+
 
 
 .bubble {
@@ -80,25 +126,65 @@ textarea {
     color: white;
 }
 
+.bubbleSide {
+    position: relative;
+    width: 240px;
+    /*height: 120px;*/
+    padding: 0px;
+    background: #0081FF;
+    -webkit-border-radius: 29px;
+    -moz-border-radius: 29px;
+    border-radius: 29px;
+    border: #FFFFFF solid 3px;
+}
 
-$sprite-scaleTimFriend: 3.5;
+    .bubbleSide:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 5px 10px 5px 0;
+        border-color: transparent #0081FF;
+        display: block;
+        width: 0;
+        z-index: 1;
+        left: -10px;
+        top: 31px;
+    }
+
+    .bubbleSide:before {
+      
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 7px 12px 7px 0;
+        border-color: transparent #FFFFFF;
+        display: block;
+        width: 0;
+        z-index: 0;
+        left: -15px;
+        top: 29px;
+    }
+
+
+
+$sprite-scaleTimFriend: 3.2;
 $sprite-scaleBully: 3.5;
 
 .Tim {
-    width: calc(18px * #{$sprite-scale});
-    height: calc(36px * #{$sprite-scale});
-    background: url("/Public/Img/tim.png") no-repeat calc(-222px * #{$sprite-scale}) 0;
-    background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
+    width: calc(18px * #{$sprite-scaleTimFriend});
+    height: calc(36px * #{$sprite-scaleTimFriend});
+    background: url("/Public/Img/tim.png") no-repeat calc(-222px * #{$sprite-scaleTimFriend}) 0;
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
     //top: 183px;
     //left: 480px;
 }
 
 .Friend {
-    width: calc(25px * #{$sprite-scale});
-    height: calc(38px * #{$sprite-scale});
-    background: url('/Public/Img/friend.png') no-repeat calc(-184px* #{$sprite-scale})0;
-    background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
+    width: calc(25px * #{$sprite-scaleTimFriend});
+    height: calc(38px * #{$sprite-scaleTimFriend});
+    background: url('/Public/Img/friend.png') no-repeat calc(-184px* #{$sprite-scaleTimFriend})0;
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
     //top: 170px;
     //left: 550px;
@@ -106,13 +192,93 @@ $sprite-scaleBully: 3.5;
 
 
 .TimLocker {
-    width: calc(18px * #{$sprite-scale});
-    height: calc(36px * #{$sprite-scale});
-    background: url("/Public/Img/tim.png") no-repeat calc(-326px * #{$sprite-scale}) (-123px * #{$sprite-scale});
-    background-size: calc(431px * #{$sprite-scale}) calc(1204px * #{$sprite-scale});
+    width: calc(23px * #{$sprite-scaleTimFriend});
+    height: calc(32px * #{$sprite-scaleTimFriend});
+    background: url("/Public/Img/tim.png") no-repeat calc(-324px * #{$sprite-scaleTimFriend}) (-42px * #{$sprite-scaleTimFriend});
+    background-size: calc(431px * #{$sprite-scaleTimFriend}) calc(1204px * #{$sprite-scaleTimFriend});
     position: absolute;
-    top: 183px;
-    left: 480px;
+    //top: 183px;
+    //left: 480px;
+}
+
+.LockerTron9000 {
+    position: absolute;
+}
+
+.TimBully {
+    width: calc(18px * 2.7);
+    height: calc(36px * 2.7);
+    background: url("/Public/Img/tim.png") no-repeat calc(-222px * $sprite-scaleTimFriend) 0;
+    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    position: absolute;
+}
+
+.Bully {
+    width: calc(25px * 2.9);
+    height: calc(39px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-184px * $sprite-scaleBully) 0;
+    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    position: absolute;
+}
+
+.TimPunch1 {
+    width: calc(22px * 2.7);
+    height: calc(36px * 2.7);
+    background: url("/Public/Img/tim.png") no-repeat calc(-220px * $sprite-scaleTimFriend) calc(-122px * $sprite-scaleTimFriend);
+    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    position: absolute;
+}
+
+.TimPunch2 {
+    width: calc(26px * 2.7);
+    height: calc(36px * 2.7);
+    background: url("/Public/Img/tim.png") no-repeat calc(-398px * $sprite-scaleTimFriend) calc(-122px * $sprite-scaleTimFriend);
+    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    position: absolute;
+}
+
+.TimVictorious {
+    width: calc(22px * 2.7);
+    height: calc(36px * 2.7);
+    background: url("/Public/Img/tim.png") no-repeat calc(-254px * $sprite-scaleTimFriend) calc(-42px * $sprite-scaleTimFriend);
+    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    position: absolute;
+}
+
+.BullyPunch1 {
+    width: calc(27px * 2.9);
+    height: calc(39px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-214px * $sprite-scaleBully) 0;
+    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    position: absolute;
+}
+
+.BullyPunch2 {
+    width: calc(32px * 2.9);
+    height: calc(42px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-74px * $sprite-scaleBully) calc(-133px * $sprite-scaleBully);
+    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    position: absolute;
+}
+
+.BullyVanquished {
+    width: calc(39px * 2.9);
+    height: calc(37px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-106px * $sprite-scaleBully) calc(-172px * $sprite-scaleBully);
+    background-size: calc(431px * $sprite-scaleBully) calc(1204px * $sprite-scaleBully);
+    position: absolute;
+}
+
+.TimWalk {
+    width: calc(22px * 2.7);
+    height: calc(36px * 2.7);
+    background: url("/Public/Img/tim.png") no-repeat calc(-325px * $sprite-scaleTimFriend) 0;
+    background-size: calc(431px * $sprite-scaleTimFriend) calc(1204px * $sprite-scaleTimFriend);
+    position: absolute;
+}
+
+.Teacher {
+    position: absolute;
 }
 
 html {
