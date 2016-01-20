@@ -121,10 +121,10 @@ textarea {
   position: absolute; }
 
 .Friend {
-  width: calc(25px * 2.7);
-  height: calc(38px * 2.7);
-  background: url("/Public/Img/friend.png") no-repeat calc(-184px* 2.7) 0;
-  background-size: calc(431px * 2.7) calc(1204px * 2.7);
+  width: calc(25px * 2.5);
+  height: calc(38px * 2.5);
+  background: url("/Public/Img/friend.png") no-repeat calc(-184px* 2.5) 0;
+  background-size: calc(431px * 2.5) calc(1204px * 2.5);
   position: absolute; }
 
 .TimLocker {
@@ -137,6 +137,36 @@ textarea {
 
 .LockerTron9000 {
     position: absolute;
+}
+
+.TimBully {
+  width: calc(18px * 2.7);
+  height: calc(36px * 2.7);
+  background: url("/Public/Img/tim.png") no-repeat calc(-222px * 2.7) 0;
+  background-size: calc(431px * 2.7) calc(1204px * 2.7);
+  position: absolute; }
+
+.Bully {
+    width: calc(25px * 2.9);
+	height: calc(39px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-184px * 2.9) 0;
+    background-size: calc(431px * 2.9) calc(1204px * 2.9);
+	position: absolute;
+}
+
+.TimPunch {
+  width: calc(22px * 2.7);
+  height: calc(36px * 2.7);
+  background: url("/Public/Img/tim.png") no-repeat calc(-220px * 2.7) calc(-122px * 2.7);
+  background-size: calc(431px * 2.7) calc(1204px * 2.7);
+  position: absolute; }
+
+.BullyPunch {
+    width: calc(27px * 2.9);
+	height: calc(39px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-214px * 2.9) 0;
+    background-size: calc(431px * 2.9) calc(1204px * 2.9);
+	position: absolute;
 }
 
 html {

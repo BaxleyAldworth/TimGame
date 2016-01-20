@@ -188,6 +188,10 @@
     <Compile Include="Migrations\201601160023051_AddPositionXY.Designer.cs">
       <DependentUpon>201601160023051_AddPositionXY.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601192309136_text.cs" />
+    <Compile Include="Migrations\201601192309136_text.Designer.cs">
+      <DependentUpon>201601192309136_text.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\CharactersOnPageVM.cs" />
     <Compile Include="Models\PhraseVM.cs" />
     <Compile Include="Global.asax.cs">
@@ -243,6 +247,7 @@
       <DependentUpon>compilerconfig.json</DependentUpon>
     </None>
     <None Include="Content\Site.scss" />
+    <Content Include="Public\Img\bully.png" />
     <Content Include="Public\Img\chalkboard.jpg" />
     <Content Include="Public\Img\chalkboardFull.jpg" />
     <Content Include="Public\Img\Friend.png" />
@@ -327,6 +332,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601160023051_AddPositionXY.resx">
       <DependentUpon>201601160023051_AddPositionXY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601192309136_text.resx">
+      <DependentUpon>201601192309136_text.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
