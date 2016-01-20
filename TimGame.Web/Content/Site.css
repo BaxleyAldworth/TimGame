@@ -199,6 +199,13 @@ textarea {
 	position: absolute;
 }
 
+.TimWalk {
+  width: calc(22px * 2.7);
+  height: calc(36px * 2.7);
+  background: url("/Public/Img/tim.png") no-repeat calc(-325px * 2.7) 0;
+  background-size: calc(431px * 2.7) calc(1204px * 2.7);
+  position: absolute; }
+
 html {
   background: url("/Public/Img/chalkboard.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;

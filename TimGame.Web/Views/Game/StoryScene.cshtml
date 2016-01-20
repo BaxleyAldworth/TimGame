@@ -12,7 +12,7 @@
         string positionStyle = $"top: {m.PositionY}px; left: {m.PositionX}px";
 
         <div class="@m.Name" style="@positionStyle">
-            @if (m.Name == "Friend" || m.Name == "LockerTron9000" || m.Name == "Bully")
+            @if (m.IsNPC == true)
             {
                 <div class="bubble">
                     <div class="bubblewords">

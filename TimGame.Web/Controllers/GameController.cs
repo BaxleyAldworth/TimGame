@@ -28,14 +28,16 @@ namespace TimGame.Web.Controllers
                 BackgroundUrl = page.BackgroundUrl,
                 NextPageId = page.NextPageId,
                 NextPageButtonText = page.NextPageButtonText,
-                
+      
+
                 CharactersOnPage = from c in page.CharactersOnPage
                                    select new CharactersOnPageVM
                                    {
                                        Id = c.Id,
                                        Name = c.Name,
                                        PositionX = c.PositionX,
-                                       PositionY = c.PositionY
+                                       PositionY = c.PositionY,
+                                       IsNPC = c.IsNPC
                                    },
 
                 

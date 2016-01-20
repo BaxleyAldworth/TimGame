@@ -11,5 +11,6 @@ namespace TimGame.Web.Models
         public string Name { get; set; }
         public int PositionX { get; set; }
         public int PositionY { get; set; }
+        public bool IsNPC { get; set; }
     }
 }
