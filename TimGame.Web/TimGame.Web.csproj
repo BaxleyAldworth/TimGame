@@ -192,6 +192,10 @@
     <Compile Include="Migrations\201601201648453_NextPageButtonText.Designer.cs">
       <DependentUpon>201601201648453_NextPageButtonText.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201601201738319_IsNPCtoCharacterOnPageVM.cs" />
+    <Compile Include="Migrations\201601201738319_IsNPCtoCharacterOnPageVM.Designer.cs">
+      <DependentUpon>201601201738319_IsNPCtoCharacterOnPageVM.cs</DependentUpon>
+    </Compile>
     <Compile Include="Models\CharactersOnPageVM.cs" />
     <Compile Include="Models\PhraseVM.cs" />
     <Compile Include="Global.asax.cs">
@@ -335,6 +339,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201601201648453_NextPageButtonText.resx">
       <DependentUpon>201601201648453_NextPageButtonText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601201738319_IsNPCtoCharacterOnPageVM.resx">
+      <DependentUpon>201601201738319_IsNPCtoCharacterOnPageVM.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

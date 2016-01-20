@@ -206,6 +206,10 @@ textarea {
   background-size: calc(431px * 2.7) calc(1204px * 2.7);
   position: absolute; }
 
+.Teacher {
+    position: absolute;
+}
+
 html {
   background: url("/Public/Img/chalkboard.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
