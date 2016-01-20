@@ -8,6 +8,7 @@ namespace TimGame.Web.Models
         public IEnumerable<CharactersOnPageVM> CharactersOnPage { get; set; } = new List<CharactersOnPageVM>();
         public string BackgroundUrl { get; set; }
         public IEnumerable<PhraseVM> Phrases { get; set; } = new List<PhraseVM>();
+        public string NextPageButtonText { get; set; }
         //public int CurrentPageId { get; set; }
     }
 }

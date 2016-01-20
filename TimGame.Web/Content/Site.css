@@ -154,17 +154,47 @@ textarea {
 	position: absolute;
 }
 
-.TimPunch {
+.TimPunch1 {
   width: calc(22px * 2.7);
   height: calc(36px * 2.7);
   background: url("/Public/Img/tim.png") no-repeat calc(-220px * 2.7) calc(-122px * 2.7);
   background-size: calc(431px * 2.7) calc(1204px * 2.7);
   position: absolute; }
 
-.BullyPunch {
+.TimPunch2 {
+  width: calc(26px * 2.7);
+  height: calc(36px * 2.7);
+  background: url("/Public/Img/tim.png") no-repeat calc(-398px * 2.7) calc(-122px * 2.7);
+  background-size: calc(431px * 2.7) calc(1204px * 2.7);
+  position: absolute; }
+
+.TimVictorious {
+  width: calc(22px * 2.7);
+  height: calc(36px * 2.7);
+  background: url("/Public/Img/tim.png") no-repeat calc(-254px * 2.7) calc(-42px * 2.7);
+  background-size: calc(431px * 2.7) calc(1204px * 2.7);
+  position: absolute; }
+
+.BullyPunch1 {
     width: calc(27px * 2.9);
 	height: calc(39px * 2.9);
     background: url('/Public/Img/bully.png') no-repeat calc(-214px * 2.9) 0;
+    background-size: calc(431px * 2.9) calc(1204px * 2.9);
+	position: absolute;
+}
+
+.BullyPunch2 {
+    width: calc(32px * 2.9);
+	height: calc(42px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-74px * 2.9) calc(-133px * 2.9);
+    background-size: calc(431px * 2.9) calc(1204px * 2.9);
+	position: absolute;
+}
+
+.BullyVanquished {
+    width: calc(39px * 2.9);
+	height: calc(37px * 2.9);
+    background: url('/Public/Img/bully.png') no-repeat calc(-106px * 2.9) calc(-172px * 2.9);
     background-size: calc(431px * 2.9) calc(1204px * 2.9);
 	position: absolute;
 }

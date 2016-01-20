@@ -7,13 +7,13 @@ namespace TimGame.Web.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class text : IMigrationMetadata
+    public sealed partial class NextPageButtonText : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(text));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(NextPageButtonText));
         
         string IMigrationMetadata.Id
         {
-            get { return "201601192309136_text"; }
+            get { return "201601201648453_NextPageButtonText"; }
         }
         
         string IMigrationMetadata.Source

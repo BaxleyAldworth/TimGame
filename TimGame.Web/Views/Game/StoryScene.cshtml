@@ -37,7 +37,7 @@
             {
         <div class="col-md-1 col-md-offset-10">
 
-            @Html.ActionLink("Next Page >", "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class = "btnNext float-right" })
+            @Html.ActionLink(Model.NextPageButtonText, "StoryScene", new { nextPageNum = Model.NextPageId }, new { @class = "btnNext float-right" })
         </div>
     }
 

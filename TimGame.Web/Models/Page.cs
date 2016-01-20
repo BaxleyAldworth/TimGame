@@ -12,7 +12,7 @@ namespace TimGame.Web.Models
         public int Id { get; set; }
         public int? NextPageId { get; set; }
         public virtual ICollection<Character> CharactersOnPage { get; set; } = new List<Character>();
-        public string Title { get; set; }
+        public string NextPageButtonText { get; set; }
         public string BackgroundUrl { get; set; }
         //public virtual ICollection<Choice> Choices { get; set; }
     }

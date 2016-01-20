@@ -27,6 +27,7 @@ namespace TimGame.Web.Controllers
             {
                 BackgroundUrl = page.BackgroundUrl,
                 NextPageId = page.NextPageId,
+                NextPageButtonText = page.NextPageButtonText,
                 
                 CharactersOnPage = from c in page.CharactersOnPage
                                    select new CharactersOnPageVM
