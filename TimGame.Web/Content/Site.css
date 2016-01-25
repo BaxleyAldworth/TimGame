@@ -146,24 +146,24 @@ textarea {
   top: 29px; }
 
 .Tim {
-  width: calc(18px * 3.2);
-  height: calc(36px * 3.2);
-  background: url("/Public/Img/tim.png") no-repeat calc(-222px * 3.2) 0;
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  width: calc(18px * 3.8);
+  height: calc(36px * 3.8);
+  background: url("/Public/Img/tim.png") no-repeat calc(-222px * 3.8) 0;
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .Friend {
-  width: calc(25px * 3.2);
-  height: calc(38px * 3.2);
-  background: url("/Public/Img/friend.png") no-repeat calc(-184px* 3.2) 0;
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  width: calc(25px * 3.8);
+  height: calc(38px * 3.8);
+  background: url("/Public/Img/friend.png") no-repeat calc(-184px* 3.8) 0;
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .TimLocker {
-  width: calc(23px * 3.2);
-  height: calc(32px * 3.2);
-  background: url("/Public/Img/tim.png") no-repeat calc(-324px * 3.2) calc(-42px * 3.2);
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  width: calc(23px * 3.8);
+  height: calc(32px * 3.8);
+  background: url("/Public/Img/tim.png") no-repeat calc(-324px * 3.8) calc(-42px * 3.8);
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .LockerTron9000 {
@@ -172,64 +172,64 @@ textarea {
 .TimBully {
   width: calc(18px * 2.7);
   height: calc(36px * 2.7);
-  background: url("/Public/Img/tim.png") no-repeat calc(-222px * 3.2) 0;
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  background: url("/Public/Img/tim.png") no-repeat calc(-222px * 3.8) 0;
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .Bully {
   width: calc(25px * 2.9);
   height: calc(39px * 2.9);
-  background: url("/Public/Img/bully.png") no-repeat calc(-184px * 3.5) 0;
-  background-size: calc(431px * 3.5) calc(1204px * 3.5);
+  background: url("/Public/Img/bully.png") no-repeat calc(-184px * 4.2) 0;
+  background-size: calc(431px * 4.2) calc(1204px * 4.2);
   position: absolute; }
 
 .TimPunch1 {
   width: calc(22px * 2.7);
   height: calc(36px * 2.7);
-  background: url("/Public/Img/tim.png") no-repeat calc(-220px * 3.2) calc(-122px * 3.2);
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  background: url("/Public/Img/tim.png") no-repeat calc(-220px * 3.8) calc(-122px * 3.8);
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .TimPunch2 {
   width: calc(26px * 2.7);
   height: calc(36px * 2.7);
-  background: url("/Public/Img/tim.png") no-repeat calc(-398px * 3.2) calc(-122px * 3.2);
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  background: url("/Public/Img/tim.png") no-repeat calc(-398px * 3.8) calc(-122px * 3.8);
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .TimVictorious {
   width: calc(22px * 2.7);
   height: calc(36px * 2.7);
-  background: url("/Public/Img/tim.png") no-repeat calc(-254px * 3.2) calc(-42px * 3.2);
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  background: url("/Public/Img/tim.png") no-repeat calc(-254px * 3.8) calc(-42px * 3.8);
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .BullyPunch1 {
   width: calc(27px * 2.9);
   height: calc(39px * 2.9);
-  background: url("/Public/Img/bully.png") no-repeat calc(-214px * 3.5) 0;
-  background-size: calc(431px * 3.5) calc(1204px * 3.5);
+  background: url("/Public/Img/bully.png") no-repeat calc(-214px * 4.2) 0;
+  background-size: calc(431px * 4.2) calc(1204px * 4.2);
   position: absolute; }
 
 .BullyPunch2 {
   width: calc(32px * 2.9);
   height: calc(42px * 2.9);
-  background: url("/Public/Img/bully.png") no-repeat calc(-74px * 3.5) calc(-133px * 3.5);
-  background-size: calc(431px * 3.5) calc(1204px * 3.5);
+  background: url("/Public/Img/bully.png") no-repeat calc(-74px * 4.2) calc(-133px * 4.2);
+  background-size: calc(431px * 4.2) calc(1204px * 4.2);
   position: absolute; }
 
 .BullyVanquished {
   width: calc(39px * 2.9);
   height: calc(37px * 2.9);
-  background: url("/Public/Img/bully.png") no-repeat calc(-106px * 3.5) calc(-172px * 3.5);
-  background-size: calc(431px * 3.5) calc(1204px * 3.5);
+  background: url("/Public/Img/bully.png") no-repeat calc(-106px * 4.2) calc(-172px * 4.2);
+  background-size: calc(431px * 4.2) calc(1204px * 4.2);
   position: absolute; }
 
 .TimWalk {
   width: calc(22px * 2.7);
   height: calc(36px * 2.7);
-  background: url("/Public/Img/tim.png") no-repeat calc(-325px * 3.2) 0;
-  background-size: calc(431px * 3.2) calc(1204px * 3.2);
+  background: url("/Public/Img/tim.png") no-repeat calc(-325px * 3.8) 0;
+  background-size: calc(431px * 3.8) calc(1204px * 3.8);
   position: absolute; }
 
 .Teacher {
